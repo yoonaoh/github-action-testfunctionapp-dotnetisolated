@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Net;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
@@ -23,7 +22,7 @@ namespace FunctionApp1
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString("Welcome to Azure Functions! This is a test of Dotnet Isolated 6");
+            response.WriteString("Welcome to Azure Functions! This is a test of .NET 10 isolated");
 
             return response;
         }
